@@ -25,7 +25,7 @@ for item in embedded_data:
     item["embedding"] = np.array(item["embedding"])
 
 # Set your OpenAI API key
-openai.api_key = "sk-REPLACE-WITH-YOUR-KEY"
+openai.api_key = "OPENAI_API_KEY"
 
 # Function to get embedding for question
 def get_embedding(text, model="text-embedding-ada-002"):
