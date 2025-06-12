@@ -2,7 +2,7 @@ import json
 import numpy as np
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-import openai
+from openai import OpenAI  # ✅ correct import
 import base64
 import os
 
@@ -24,12 +24,15 @@ with open("embedded_data.json", "r", encoding="utf-8") as f:
 for item in embedded_data:
     item["embedding"] = np.array(item["embedding"])
 
-# Set your OpenAI API key
-openai.api_key = "OPENAI_API_KEY"
+# Load your OpenAI API key from environment variable
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+
+# Initialize OpenAI client
+client = OpenAI(api_key=OPENAI_API_KEY)
 
 # Function to get embedding for question
 def get_embedding(text, model="text-embedding-ada-002"):
-    response = openai.embeddings.create(
+    response = client.embeddings.create(
         input=text,
         model=model
     )
@@ -47,7 +50,7 @@ def answer_question():
     question = data.get("question", "")
     image_data = data.get("image", None)
 
-    # Optional image handling (we'll skip processing image for now)
+    # Optional image handling (skipped for now)
     if image_data:
         print("Received image, but skipping image processing for now.")
 
@@ -66,7 +69,7 @@ def answer_question():
     similarities.sort(reverse=True, key=lambda x: x[0])
     top_matches = similarities[:2]
 
-    # Prepare mock answer (for simplicity)
+    # Prepare mock answer
     answer = "Based on Discourse data, here's a helpful answer."
 
     # Prepare links
