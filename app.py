@@ -10,6 +10,12 @@ import os
 app = Flask(__name__)
 CORS(app)
 
+@app.route("/")
+def home():
+    return jsonify({
+        "message": "Welcome to Virtual TA API! Use the /api/ endpoint to send your questions."
+    })
+
 # Load embedded data
 with open("embedded_data.json", "r", encoding="utf-8") as f:
     embedded_data = json.load(f)
