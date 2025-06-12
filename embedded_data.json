@@ -1,0 +1,20 @@
+[
+  {
+    "topic_id": 1,
+    "title": "How to activate virtual environment?",
+    "content": "You can activate virtual environment using venv\\Scripts\\activate on Windows.",
+    "embedding": [0.01, 0.02, 0.03, 0.04, 0.05]
+  },
+  {
+    "topic_id": 2,
+    "title": "OpenAI API quota issue",
+    "content": "You may exceed your OpenAI API quota if you don't have enough credits.",
+    "embedding": [0.11, 0.12, 0.13, 0.14, 0.15]
+  },
+  {
+    "topic_id": 3,
+    "title": "Error while scraping discourse",
+    "content": "If you get 'Failed to get topics', it may be due to incorrect cookie or headers.",
+    "embedding": [0.21, 0.22, 0.23, 0.24, 0.25]
+  }
+]

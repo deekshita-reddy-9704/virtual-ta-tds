@@ -1,0 +1,22 @@
+[
+  {
+    "topic_id": 1001,
+    "title": "Doubt in Assignment 1 Q3",
+    "content": "I have a doubt in question 3 related to hypothesis testing. Should we use t-test or z-test?"
+  },
+  {
+    "topic_id": 1001,
+    "title": "Doubt in Assignment 1 Q3",
+    "content": "You should use t-test since population variance is unknown."
+  },
+  {
+    "topic_id": 1002,
+    "title": "Clarification on Project Submission",
+    "content": "Can we submit the project after deadline with penalty?"
+  },
+  {
+    "topic_id": 1002,
+    "title": "Clarification on Project Submission",
+    "content": "No, late submissions are not allowed as per project rules."
+  }
+]

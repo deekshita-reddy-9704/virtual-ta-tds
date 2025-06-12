@@ -1,0 +1,17 @@
+requests
+beautifulsoup4
+requests
+beautifulsoup4
+nltk
+beautifulsoup4
+requests
+beautifulsoup4
+nltk
+openai
+flask
+flask-cors
+numpy
+openai
+requests
+beautifulsoup4
+nltk

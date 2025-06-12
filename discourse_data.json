@@ -1,0 +1,34 @@
+[
+  {
+    "topic_id": 1001,
+    "title": "Doubt in Assignment 1 Q3",
+    "posts": [
+      {
+        "post_number": 1,
+        "content": "I have a doubt in question 3 related to hypothesis testing. Should we use t-test or z-test?",
+        "created_at": "2025-03-05T10:15:00Z"
+      },
+      {
+        "post_number": 2,
+        "content": "You should use t-test since population variance is unknown.",
+        "created_at": "2025-03-05T10:30:00Z"
+      }
+    ]
+  },
+  {
+    "topic_id": 1002,
+    "title": "Clarification on Project Submission",
+    "posts": [
+      {
+        "post_number": 1,
+        "content": "Can we submit the project after deadline with penalty?",
+        "created_at": "2025-03-12T14:10:00Z"
+      },
+      {
+        "post_number": 2,
+        "content": "No, late submissions are not allowed as per project rules.",
+        "created_at": "2025-03-12T14:25:00Z"
+      }
+    ]
+  }
+]
